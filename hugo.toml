@@ -1,12 +1,12 @@
-baseURL = "https://example.org/"
+baseURL = "https://kociol.vcc.earth/"
 languageCode = "en-us"
-title = "Organization Blog"
+title = "Kolektyw KOCIOŁ"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 
 [params]
-  orgName = "Your Organization"
-  description = "News and updates."
+  orgName = "Kolektyw KOCIOŁ"
+  description = "Strona naszej organizacji"
 
 [taxonomies]
   tag = "tags"
