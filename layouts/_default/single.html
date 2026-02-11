@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+  {{ with .Params.tags }}
+    <p class="meta">Tags:
+      {{ range $index, $tag := . }}{{ if $index }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
+    </p>
+  {{ end }}
+  <div class="content">{{ .Content }}</div>
+</article>
+{{ end }}

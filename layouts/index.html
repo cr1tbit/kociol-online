@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Params.orgName }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</section>
+
+<section>
+  <h2>Latest Posts</h2>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ if gt (len $posts) 0 }}
+    <ul class="post-list">
+      {{ range first 8 $posts.ByDate.Reverse }}
+        <li>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+    <p><a href="{{ "/posts/" | relURL }}">Browse all posts</a></p>
+  {{ else }}
+    <p>No posts yet.</p>
+  {{ end }}
+</section>
+{{ end }}

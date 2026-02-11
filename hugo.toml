@@ -1,0 +1,13 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Organization Blog"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[params]
+  orgName = "Your Organization"
+  description = "News and updates."
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

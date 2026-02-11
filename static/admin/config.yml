@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: REPLACE_ME_OWNER/REPLACE_ME_REPO
+  branch: main
+  # Required on GitHub Pages: host your own OAuth bridge and set its callback URL.
+  # Example bridge: https://github.com/decaporg/decap-cms/tree/main/packages/decap-cms-backend-github
+  auth_endpoint: https://REPLACE_ME_AUTH_BRIDGE_HOST/auth
+
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: /uploads
+
+site_url: https://REPLACE_ME_DOMAIN
+display_url: https://REPLACE_ME_DOMAIN
+
+collections:
+  - name: posts
+    label: Posts
+    folder: content/posts
+    create: true
+    slug: "{{slug}}"
+    preview_path: posts/{{slug}}/
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish date
+        name: date
+        widget: datetime
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
