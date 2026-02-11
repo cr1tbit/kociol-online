@@ -49,4 +49,3 @@ You can keep all content/CMS and replace only templates and styles:
 - `static/css/site.css`
 
 Content in `content/posts/` and CMS schema in `static/admin/config.yml` can remain unchanged.
-# kociol-online
