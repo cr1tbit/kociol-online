@@ -2,9 +2,8 @@ backend:
   name: github
   repo: cr1tbit/kociol-online
   branch: main
-  # Required on GitHub Pages: host your own OAuth bridge and set its callback URL.
-  # Example bridge: https://github.com/decaporg/decap-cms/tree/main/packages/decap-cms-backend-github
-  auth_endpoint: https://priv.vcc.earth/auth
+  base_url: https://priv.vcc.earth
+  auth_endpoint: auth
 
 publish_mode: editorial_workflow
 media_folder: static/uploads
