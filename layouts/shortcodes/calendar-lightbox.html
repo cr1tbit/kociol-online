@@ -1,0 +1,33 @@
+{{ $months := site.Data.calendar.months.months }}
+{{ if gt (len $months) 0 }}
+{{ $first := index $months 0 }}
+<div class="calendar-gallery" data-calendar-gallery>
+  <figure class="calendar-main">
+    <img
+      src="{{ $first.image | relURL }}"
+      alt="{{ $first.month }} {{ $first.year }}"
+      data-calendar-main-image>
+    <figcaption data-calendar-main-caption>{{ $first.month }} {{ $first.year }}</figcaption>
+  </figure>
+
+  <div class="calendar-previews" role="list">
+    {{ range $i, $m := $months }}
+    <button
+      class="calendar-thumb{{ if eq $i 0 }} is-active{{ end }}"
+      type="button"
+      role="listitem"
+      data-calendar-select
+      data-calendar-src="{{ $m.image | relURL }}"
+      data-calendar-alt="{{ $m.month }} {{ $m.year }}"
+      data-calendar-caption="{{ $m.month }} {{ $m.year }}"
+      aria-pressed="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+      <img src="{{ $m.image | relURL }}" alt="{{ $m.month }} {{ $m.year }}">
+      <span>{{ $m.month }} {{ $m.year }}</span>
+    </button>
+    {{ end }}
+  </div>
+</div>
+<script defer src="{{ "js/calendar-lightbox.js" | relURL }}"></script>
+{{ else }}
+<p class="meta">Brak obrazów kalendarza. Dodaj wpisy w <code>data/calendar/months.yaml</code>.</p>
+{{ end }}

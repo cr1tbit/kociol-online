@@ -10,16 +10,15 @@
 <body>
   <div class="page-wrap">
     <header class="masthead panel">
-      <div class="masthead-art">
-        <p class="micro">kolektyw.kociol // terminal node</p>
-        <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-        <p class="site-tagline">{{ .Site.Params.description }}</p>
+      <div class="logo-carousel" aria-hidden="true">
+        <div class="logo-carousel-track">
+          <div class="logo-carousel-strip">
+            {{ range seq 1 20 }}<img src="{{ "img/kociol.jpg" | relURL }}" alt="">{{ end }}
+          </div>
+        </div>
       </div>
-      <div class="blink-row" aria-hidden="true">
-        <span>new</span>
-        <span>posts</span>
-        <span>scene</span>
-        <span>archive</span>
+      <div class="site-banner">
+        <img src="{{ "img/kociol-banner-placeholder.png" | relURL }}" alt="Kolektyw KOCIOŁ banner">
       </div>
     </header>
 
@@ -28,35 +27,27 @@
         <h2>Navigation</h2>
         <nav>
           <ul class="nav-list">
-            <li><a href="{{ "/" | relURL }}">Home</a></li>
-            <li><a href="{{ "/posts/" | relURL }}">Journal</a></li>
-            <li><a href="{{ "/posts/" | relURL }}">Archive</a></li>
+            <li><a href="{{ "/kociol-info/welcome/" | relURL }}">Kocioł info</a></li>
+            <li><a href="{{ "/kalendarz/" | relURL }}">Kalendarz</a></li>
+            <li><a href="{{ "/posts/" | relURL }}">Wydarzenia info</a></li>
+            <li><a href="{{ "/kotlownia/" | relURL }}">Kotłownia</a></li>
           </ul>
         </nav>
 
-        <h3>Badges</h3>
-        <div class="badge-grid" aria-hidden="true">
-          <span>88x31</span>
-          <span>CSS</span>
-          <span>HUGO</span>
-          <span>KOCIOL</span>
-        </div>
+        <h3>Kontakt</h3>
+        <p>
+          <a class="discord-badge-link" href="https://discord.gg/" target="_blank" rel="noopener noreferrer">
+            <img
+              class="discord-badge"
+              src="https://img.shields.io/badge/Discord-do%C5%82%C4%85cz-5865F2?logo=discord&logoColor=white"
+              alt="Dołącz do nas na Discordzie">
+          </a>
+        </p>
       </aside>
 
       <main class="content panel">
         {{ block "main" . }}{{ end }}
       </main>
-
-      <aside class="sidebar panel">
-        <h2>Widgets</h2>
-        <ul class="widget-list">
-          <li>Best viewed with curiosity.</li>
-          <li>Static site // no tracking.</li>
-          <li>Hand-coded vibes only.</li>
-        </ul>
-        <h3>Now Playing</h3>
-        <p class="micro">your favorite Y2K playlist</p>
-      </aside>
     </div>
 
     <footer class="site-footer panel">

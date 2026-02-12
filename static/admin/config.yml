@@ -45,3 +45,26 @@ collections:
       - label: Body
         name: body
         widget: markdown
+  - name: site_data
+    label: Site Data
+    files:
+      - name: calendar_months
+        label: Kalendarz Miesięcy
+        file: data/calendar/months.yaml
+        fields:
+          - label: Months
+            name: months
+            widget: list
+            summary: "{{fields.month}} {{fields.year}}"
+            fields:
+              - label: Month
+                name: month
+                widget: string
+              - label: Year
+                name: year
+                widget: number
+                value_type: int
+                min: 2000
+              - label: Image
+                name: image
+                widget: image
