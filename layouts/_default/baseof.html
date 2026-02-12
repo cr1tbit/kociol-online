@@ -8,19 +8,60 @@
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-      <p class="site-tagline">{{ .Site.Params.description }}</p>
+  <div class="page-wrap">
+    <header class="masthead panel">
+      <div class="masthead-art">
+        <p class="micro">kolektyw.kociol // terminal node</p>
+        <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <p class="site-tagline">{{ .Site.Params.description }}</p>
+      </div>
+      <div class="blink-row" aria-hidden="true">
+        <span>new</span>
+        <span>posts</span>
+        <span>scene</span>
+        <span>archive</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <aside class="sidebar panel">
+        <h2>Navigation</h2>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="{{ "/" | relURL }}">Home</a></li>
+            <li><a href="{{ "/posts/" | relURL }}">Journal</a></li>
+            <li><a href="{{ "/posts/" | relURL }}">Archive</a></li>
+          </ul>
+        </nav>
+
+        <h3>Badges</h3>
+        <div class="badge-grid" aria-hidden="true">
+          <span>88x31</span>
+          <span>CSS</span>
+          <span>HUGO</span>
+          <span>KOCIOL</span>
+        </div>
+      </aside>
+
+      <main class="content panel">
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      <aside class="sidebar panel">
+        <h2>Widgets</h2>
+        <ul class="widget-list">
+          <li>Best viewed with curiosity.</li>
+          <li>Static site // no tracking.</li>
+          <li>Hand-coded vibes only.</li>
+        </ul>
+        <h3>Now Playing</h3>
+        <p class="micro">your favorite Y2K playlist</p>
+      </aside>
     </div>
-  </header>
-  <main class="wrap">
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer class="site-footer">
-    <div class="wrap">
+
+    <footer class="site-footer panel">
       <small>&copy; {{ now.Year }} {{ .Site.Params.orgName }}</small>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

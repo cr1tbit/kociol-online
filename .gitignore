@@ -2,3 +2,5 @@
 .hugo_cache/
 public/
 resources/
+ops/
+docs/

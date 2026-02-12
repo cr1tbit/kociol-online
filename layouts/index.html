@@ -1,10 +1,11 @@
 {{ define "main" }}
-<section class="hero">
+<section class="hero panel-inset">
+  <p class="micro">misc // welcome</p>
   <h1>{{ .Site.Params.orgName }}</h1>
   <p>{{ .Site.Params.description }}</p>
 </section>
 
-<section>
+<section class="panel-inset">
   <h2>Latest Posts</h2>
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
   {{ if gt (len $posts) 0 }}
