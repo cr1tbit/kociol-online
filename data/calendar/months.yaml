@@ -1,4 +1,7 @@
 months:
-  - month: "Luty"
+  - month: Luty
     year: 2026
-    image: "/img/calendar-placeholder.png"
+    image: /img/calendar-placeholder.png
+  - month: Cipiec
+    image: /uploads/necum.jpg
+    year: 2137
