@@ -1,9 +1,9 @@
 :root {
   --bg-1: #b78467;
   --bg-2: #a96a46;
-  --panel: #6f4733;
-  --panel-soft: #ad1d07b5;
-  --panel-deep: #5a3929;
+  --panel: #9f380b;
+  --panel-soft: #ad3907b5;
+  --panel-deep: #ac4c1c;
   --panel-ink: #fff3ea;
   --accent: #e8bf9f;
   --accent-2: #f7d9c7;
@@ -91,8 +91,8 @@ a {
 
 .site-banner img {
   display: block;
-  width: 300%;
-  max-width: none;
+  width: min(760px, 100%);
+  max-width: 100%;
   height: auto;
 }
 
