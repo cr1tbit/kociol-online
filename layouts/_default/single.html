@@ -1,7 +1,11 @@
 {{ define "main" }}
 <article class="panel-inset">
   <h1>{{ .Title }}</h1>
-  <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+  {{ $hideDate := eq .Section "kociol-info" }}
+  {{ with .File }}{{ $hideDate = or $hideDate (eq .BaseFileName "discord") (eq .BaseFileName "kotlownia") }}{{ end }}
+  {{ if not $hideDate }}
+    <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+  {{ end }}
   {{ with .Params.tags }}
     <p class="meta">Tags:
       {{ range $index, $tag := . }}{{ if $index }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
