@@ -13,6 +13,125 @@ site_url: https://kociol.vcc.earth
 display_url: https://kociol.vcc.earth
 
 collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: kociol_info_index
+        label: Kocioł info (index)
+        file: content/kociol-info/_index.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+            required: false
+      - name: kalendarz
+        label: Kalendarz
+        file: content/kalendarz.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Publish date
+            name: date
+            widget: datetime
+            required: false
+          - label: Draft
+            name: draft
+            widget: boolean
+            default: false
+          - label: Body
+            name: body
+            widget: markdown
+      - name: album_zdjec
+        label: Album zdjęć
+        file: content/album-zdjec.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Publish date
+            name: date
+            widget: datetime
+            required: false
+          - label: Draft
+            name: draft
+            widget: boolean
+            default: false
+          - label: Body
+            name: body
+            widget: markdown
+      - name: kotlownia
+        label: Kotłownia
+        file: content/kotlownia.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Publish date
+            name: date
+            widget: datetime
+            required: false
+          - label: Draft
+            name: draft
+            widget: boolean
+            default: false
+          - label: Body
+            name: body
+            widget: markdown
+      - name: discord
+        label: Discord
+        file: content/discord.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Publish date
+            name: date
+            widget: datetime
+            required: false
+          - label: Draft
+            name: draft
+            widget: boolean
+            default: false
+          - label: Body
+            name: body
+            widget: markdown
+  - name: kociol_info
+    label: Kocioł info subpages
+    folder: content/kociol-info
+    create: true
+    slug: "{{slug}}"
+    preview_path: kociol-info/{{slug}}/
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish date
+        name: date
+        widget: datetime
+        required: false
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
   - name: posts
     label: Posts
     folder: content/posts
