@@ -1,19 +1,33 @@
 {{ define "main" }}
 <section class="hero panel-inset landing-intro">
-  <h1>{{ .Site.Params.orgName }}</h1>
-  <p>to jest nasza strona internetowa</p>
-  <p>Jeszcze nikt, kto potrafiłby ją napisać, jej nie napisał.</p>
-  <p>prawdziwy bohater to nie taki którego potrzebujesz, ale taki, który jest</p>
-  <p>powiedzenie "lepszy rydz niż nic" wcale nie dotyczy grzyba. Chodzi o omastę (tłuszcz) z lnianki siewnej (lnu) który kiedyś w biednych, polskich domach służył za zamiennik tłuszczu zwierzęcego. Sympatyzuję z rydzem.</p>
+  <h1>{{ .Title | default .Site.Params.orgName }}</h1>
+  {{ with .Params.hero_lines }}
+    {{ range . }}<p>{{ . }}</p>{{ end }}
+  {{ else }}
+    <p>to jest nasza strona internetowa</p>
+    <p>Jeszcze nikt, kto potrafiłby ją napisać, jej nie napisał.</p>
+    <p>prawdziwy bohater to nie taki którego potrzebujesz, ale taki, który jest</p>
+    <p>powiedzenie "lepszy rydz niż nic" wcale nie dotyczy grzyba. Chodzi o omastę (tłuszcz) z lnianki siewnej (lnu) który kiedyś w biednych, polskich domach służył za zamiennik tłuszczu zwierzęcego. Sympatyzuję z rydzem.</p>
+  {{ end }}
 </section>
 
 <section class="panel-inset">
-  <h2>From The Space</h2>
+  <h2>{{ .Params.section_heading | default "From The Space" }}</h2>
   <div class="landing-photos">
-    <img src="{{ "img/kociol.jpg" | relURL }}" alt="Kociol visual placeholder">
-    <img src="{{ "img/kociol.jpg" | relURL }}" alt="Kociol visual placeholder">
+    {{ with .Params.gallery_images }}
+      {{ range . }}
+        <img src="{{ . | relURL }}" alt="Kociol visual placeholder">
+      {{ end }}
+    {{ else }}
+      <img src="{{ "img/kociol.jpg" | relURL }}" alt="Kociol visual placeholder">
+      <img src="{{ "img/kociol.jpg" | relURL }}" alt="Kociol visual placeholder">
+    {{ end }}
   </div>
-  <p>We host workshops, open gatherings, and collaborative sessions that mix practical work with social time. Every event is shaped by people who show up, so the program keeps evolving month by month.</p>
-  <p>If you want to co-organize, document projects, or propose a new initiative, reach out and we will help plug it into the calendar and site updates.</p>
+  {{ with .Params.section_paragraphs }}
+    {{ range . }}<p>{{ . }}</p>{{ end }}
+  {{ else }}
+    <p>We host workshops, open gatherings, and collaborative sessions that mix practical work with social time. Every event is shaped by people who show up, so the program keeps evolving month by month.</p>
+    <p>If you want to co-organize, document projects, or propose a new initiative, reach out and we will help plug it into the calendar and site updates.</p>
+  {{ end }}
 </section>
 {{ end }}

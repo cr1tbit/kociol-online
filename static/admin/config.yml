@@ -16,6 +16,40 @@ collections:
   - name: pages
     label: Pages
     files:
+      - name: home
+        label: Home page
+        file: content/_index.md
+        fields:
+          - label: Hero title
+            name: title
+            widget: string
+          - label: Hero lines
+            name: hero_lines
+            widget: list
+            required: false
+            field:
+              label: Line
+              name: line
+              widget: string
+          - label: Section heading
+            name: section_heading
+            widget: string
+          - label: Section paragraphs
+            name: section_paragraphs
+            widget: list
+            required: false
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+          - label: Gallery images
+            name: gallery_images
+            widget: list
+            required: false
+            field:
+              label: Image
+              name: image
+              widget: image
       - name: kociol_info_index
         label: Kocioł info (index)
         file: content/kociol-info/_index.md
