@@ -14,7 +14,7 @@ display_url: https://kociol.vcc.earth
 
 collections:
   - name: main_pages
-    label: "01. Strony z menu"
+    label: "Strony z menu"
     files:
       - name: home
         label: "Kocioł info (strona główna /)"
@@ -134,41 +134,8 @@ collections:
           - label: Body
             name: body
             widget: markdown
-  - name: kociol_info
-    label: "02. Kocioł info - podstrony"
-    folder: content/kociol-info
-    create: true
-    slug: "{{slug}}"
-    preview_path: kociol-info/{{slug}}/
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Publish date
-        name: date
-        widget: datetime
-        required: false
-      - label: Draft
-        name: draft
-        widget: boolean
-        default: false
-      - label: Summary
-        name: summary
-        widget: markdown
-        required: false
-      - label: Tags
-        name: tags
-        widget: list
-        required: false
-      - label: Categories
-        name: categories
-        widget: list
-        required: false
-      - label: Body
-        name: body
-        widget: markdown
   - name: posts
-    label: "03. Wydarzenia info - wpisy"
+    label: "Wydarzenia info - wpisy"
     folder: content/posts
     create: true
     slug: "{{slug}}"
@@ -201,7 +168,7 @@ collections:
         widget: markdown
         hint: "Use Markdown formatting, e.g. ## Heading, **bold**, *italic*, - list, [link](https://...)"
   - name: kotlownia_posts
-    label: "04. Kotłownia - wpisy"
+    label: "Kotłownia - wpisy"
     folder: content/kotlownia
     create: true
     slug: "{{slug}}"
@@ -234,7 +201,7 @@ collections:
         widget: markdown
         hint: "Use Markdown formatting, e.g. ## Heading, **bold**, *italic*, - list, [link](https://...)"
   - name: site_data
-    label: "05. Galerie i dane"
+    label: "Galerie i dane"
     files:
       - name: calendar_months
         label: Kalendarz Miesięcy
