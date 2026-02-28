@@ -13,7 +13,11 @@
         {{ if not $hideDate }}
           <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
         {{ end }}
-        {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.summary }}
+          {{ . | markdownify }}
+        {{ else }}
+          {{ with .Summary }}{{ . }}{{ end }}
+        {{ end }}
       </li>
     {{ end }}
   </ul>

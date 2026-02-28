@@ -2,7 +2,7 @@
 <section class="hero panel-inset landing-intro">
   <h1>{{ .Title | default .Site.Params.orgName }}</h1>
   {{ with .Params.hero_lines }}
-    {{ range . }}<p>{{ . }}</p>{{ end }}
+    {{ range . }}{{ . | markdownify }}{{ end }}
   {{ else }}
     <p>to jest nasza strona internetowa</p>
     <p>Jeszcze nikt, kto potrafiłby ją napisać, jej nie napisał.</p>
@@ -24,7 +24,7 @@
     {{ end }}
   </div>
   {{ with .Params.section_paragraphs }}
-    {{ range . }}<p>{{ . }}</p>{{ end }}
+    {{ range . }}{{ . | markdownify }}{{ end }}
   {{ else }}
     <p>We host workshops, open gatherings, and collaborative sessions that mix practical work with social time. Every event is shaped by people who show up, so the program keeps evolving month by month.</p>
     <p>If you want to co-organize, document projects, or propose a new initiative, reach out and we will help plug it into the calendar and site updates.</p>

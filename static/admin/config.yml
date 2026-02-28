@@ -30,7 +30,7 @@ collections:
             field:
               label: Line
               name: line
-              widget: string
+              widget: markdown
           - label: Section heading
             name: section_heading
             widget: string
@@ -41,7 +41,7 @@ collections:
             field:
               label: Paragraph
               name: paragraph
-              widget: text
+              widget: markdown
           - label: Gallery images
             name: gallery_images
             widget: list
@@ -153,7 +153,7 @@ collections:
         default: false
       - label: Summary
         name: summary
-        widget: text
+        widget: markdown
         required: false
       - label: Tags
         name: tags
@@ -172,8 +172,6 @@ collections:
     create: true
     slug: "{{slug}}"
     preview_path: posts/{{slug}}/
-    editor:
-      preview: false
     fields:
       - label: Title
         name: title
@@ -187,7 +185,7 @@ collections:
         default: false
       - label: Summary
         name: summary
-        widget: text
+        widget: markdown
         required: false
       - label: Tags
         name: tags
