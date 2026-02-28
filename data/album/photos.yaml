@@ -1,4 +1,6 @@
 photos:
   - title: Zdjęcie 1
-    image: /img/calendar-placeholder.png
-    caption: Przykładowy opis zdjęcia
+    image: /uploads/20251208_210143.jpg
+    caption: spotkanie sztabu
+  - image: /uploads/20251208_210213.jpg
+    title: spotkanie sztabu
