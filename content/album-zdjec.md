@@ -5,4 +5,4 @@ draft: false
 ---
 Zupa u Łucji jest smaczna to sekcja zwrotna
 
-{{< calendar-lightbox >}}
+{{< album-lightbox >}}

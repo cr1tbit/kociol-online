@@ -1,0 +1,35 @@
+{{ $photos := site.Data.album.photos.photos }}
+{{ if gt (len $photos) 0 }}
+{{ $first := index $photos 0 }}
+{{ $firstCaption := or $first.caption $first.title }}
+<div class="calendar-gallery" data-calendar-gallery>
+  <figure class="calendar-main">
+    <img
+      src="{{ $first.image | relURL }}"
+      alt="{{ $first.title }}"
+      data-calendar-main-image>
+    <figcaption data-calendar-main-caption>{{ $firstCaption }}</figcaption>
+  </figure>
+
+  <div class="calendar-previews" role="list">
+    {{ range $i, $p := $photos }}
+    {{ $caption := or $p.caption $p.title }}
+    <button
+      class="calendar-thumb{{ if eq $i 0 }} is-active{{ end }}"
+      type="button"
+      role="listitem"
+      data-calendar-select
+      data-calendar-src="{{ $p.image | relURL }}"
+      data-calendar-alt="{{ $p.title }}"
+      data-calendar-caption="{{ $caption }}"
+      aria-pressed="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+      <img src="{{ $p.image | relURL }}" alt="{{ $p.title }}">
+      <span>{{ $caption }}</span>
+    </button>
+    {{ end }}
+  </div>
+</div>
+<script defer src="{{ "js/calendar-lightbox.js" | relURL }}"></script>
+{{ else }}
+<p class="meta">Brak obrazów albumu. Dodaj wpisy w <code>data/album/photos.yaml</code>.</p>
+{{ end }}
