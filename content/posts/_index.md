@@ -1,5 +1,4 @@
 ---
-title: "Wydarzenia info"
+title: Wydarzenia info
 ---
 
-Updates from our organization.
