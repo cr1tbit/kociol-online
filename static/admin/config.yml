@@ -99,8 +99,8 @@ collections:
             name: body
             widget: markdown
       - name: kotlownia
-        label: "Kotłownia (/kotlownia/)"
-        file: content/kotlownia.md
+        label: "Kotłownia (strona listy /kotlownia/)"
+        file: content/kotlownia/_index.md
         fields:
           - label: Title
             name: title
@@ -134,22 +134,8 @@ collections:
           - label: Body
             name: body
             widget: markdown
-  - name: kociol_info_index
-    label: "02. Kocioł info (sekcja)"
-    files:
-      - name: kociol_info_section_index
-        label: "Kocioł info - index (/kociol-info/)"
-        file: content/kociol-info/_index.md
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Body
-            name: body
-            widget: markdown
-            required: false
   - name: kociol_info
-    label: "03. Kocioł info - podstrony"
+    label: "02. Kocioł info - podstrony"
     folder: content/kociol-info
     create: true
     slug: "{{slug}}"
@@ -182,11 +168,44 @@ collections:
         name: body
         widget: markdown
   - name: posts
-    label: "04. Wydarzenia info - wpisy"
+    label: "03. Wydarzenia info - wpisy"
     folder: content/posts
     create: true
     slug: "{{slug}}"
     preview_path: posts/{{slug}}/
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish date
+        name: date
+        widget: datetime
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+      - label: Summary
+        name: summary
+        widget: markdown
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        hint: "Use Markdown formatting, e.g. ## Heading, **bold**, *italic*, - list, [link](https://...)"
+  - name: kotlownia_posts
+    label: "04. Kotłownia - wpisy"
+    folder: content/kotlownia
+    create: true
+    slug: "{{slug}}"
+    preview_path: kotlownia/{{slug}}/
     fields:
       - label: Title
         name: title
