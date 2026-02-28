@@ -13,11 +13,11 @@ site_url: https://kociol.vcc.earth
 display_url: https://kociol.vcc.earth
 
 collections:
-  - name: pages
-    label: Pages
+  - name: main_pages
+    label: "01. Strony z menu"
     files:
       - name: home
-        label: Home page
+        label: "Kocioł info (strona główna /)"
         file: content/_index.md
         fields:
           - label: Hero title
@@ -51,19 +51,8 @@ collections:
               label: Image
               name: image
               widget: image
-      - name: kociol_info_index
-        label: Kocioł info (index)
-        file: content/kociol-info/_index.md
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Body
-            name: body
-            widget: markdown
-            required: false
       - name: kalendarz
-        label: Kalendarz
+        label: "Kalendarz (/kalendarz/)"
         file: content/kalendarz.md
         fields:
           - label: Title
@@ -80,8 +69,19 @@ collections:
           - label: Body
             name: body
             widget: markdown
+      - name: posts_index
+        label: "Wydarzenia info (strona listy /posts/)"
+        file: content/posts/_index.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+            required: false
       - name: album_zdjec
-        label: Album zdjęć
+        label: "Album zdjęć (/album-zdjec/)"
         file: content/album-zdjec.md
         fields:
           - label: Title
@@ -99,7 +99,7 @@ collections:
             name: body
             widget: markdown
       - name: kotlownia
-        label: Kotłownia
+        label: "Kotłownia (/kotlownia/)"
         file: content/kotlownia.md
         fields:
           - label: Title
@@ -117,7 +117,7 @@ collections:
             name: body
             widget: markdown
       - name: discord
-        label: Discord
+        label: "Discord (/discord/)"
         file: content/discord.md
         fields:
           - label: Title
@@ -134,8 +134,22 @@ collections:
           - label: Body
             name: body
             widget: markdown
+  - name: kociol_info_index
+    label: "02. Kocioł info (sekcja)"
+    files:
+      - name: kociol_info_section_index
+        label: "Kocioł info - index (/kociol-info/)"
+        file: content/kociol-info/_index.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+            required: false
   - name: kociol_info
-    label: Kocioł info subpages
+    label: "03. Kocioł info - podstrony"
     folder: content/kociol-info
     create: true
     slug: "{{slug}}"
@@ -168,7 +182,7 @@ collections:
         name: body
         widget: markdown
   - name: posts
-    label: Posts
+    label: "04. Wydarzenia info - wpisy"
     folder: content/posts
     create: true
     slug: "{{slug}}"
@@ -201,7 +215,7 @@ collections:
         widget: markdown
         hint: "Use Markdown formatting, e.g. ## Heading, **bold**, *italic*, - list, [link](https://...)"
   - name: site_data
-    label: Site Data
+    label: "05. Galerie i dane"
     files:
       - name: calendar_months
         label: Kalendarz Miesięcy

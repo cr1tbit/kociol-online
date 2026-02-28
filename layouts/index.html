@@ -4,15 +4,12 @@
   {{ with .Params.hero_lines }}
     {{ range . }}{{ . | markdownify }}{{ end }}
   {{ else }}
-    <p>to jest nasza strona internetowa</p>
-    <p>Jeszcze nikt, kto potrafiłby ją napisać, jej nie napisał.</p>
-    <p>prawdziwy bohater to nie taki którego potrzebujesz, ale taki, który jest</p>
-    <p>powiedzenie "lepszy rydz niż nic" wcale nie dotyczy grzyba. Chodzi o omastę (tłuszcz) z lnianki siewnej (lnu) który kiedyś w biednych, polskich domach służył za zamiennik tłuszczu zwierzęcego. Sympatyzuję z rydzem.</p>
+    <p>UZUPEŁNIJ MNIE</p>
   {{ end }}
 </section>
 
 <section class="panel-inset">
-  <h2>{{ .Params.section_heading | default "From The Space" }}</h2>
+  <h2>{{ .Params.section_heading | default "UZUPEŁNIJ MNIE" }}</h2>
   <div class="landing-photos">
     {{ with .Params.gallery_images }}
       {{ range . }}
@@ -26,8 +23,7 @@
   {{ with .Params.section_paragraphs }}
     {{ range . }}{{ . | markdownify }}{{ end }}
   {{ else }}
-    <p>We host workshops, open gatherings, and collaborative sessions that mix practical work with social time. Every event is shaped by people who show up, so the program keeps evolving month by month.</p>
-    <p>If you want to co-organize, document projects, or propose a new initiative, reach out and we will help plug it into the calendar and site updates.</p>
+    <p>UZUPEŁNIJ MNIE</p>
   {{ end }}
 </section>
 {{ end }}
