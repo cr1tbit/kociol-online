@@ -15,9 +15,18 @@ hero_lines:
     planszówkowy Planujemy więcej!"
 section_heading: From The Space
 section_paragraphs:
-  - We host workshops, open gatherings, and collaborative sessions that mix
+  - >+
+    We host workshops, open gatherings, and collaborative sessions that mix
     practical work with social time. Every event is shaped by people who show
     up, so the program keeps evolving month by month.
+
+
+    * test
+
+    * test2
+
+    * test3
+
   - If you want to co-organize, document projects, or propose a new initiative,
     reach out and we will help plug it into the calendar and site updates.
 gallery_images:
