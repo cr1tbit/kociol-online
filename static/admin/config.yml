@@ -8,6 +8,9 @@ backend:
 publish_mode: editorial_workflow
 media_folder: static/uploads
 public_folder: /uploads
+media_library:
+  config:
+    multiple: true
 
 site_url: https://kociol.vcc.earth
 display_url: https://kociol.vcc.earth
@@ -51,6 +54,10 @@ collections:
               label: Image
               name: image
               widget: image
+              allow_multiple: true
+              media_library:
+                config:
+                  multiple: true
       - name: kalendarz
         label: "Kalendarz (/kalendarz/)"
         file: content/kalendarz.md
@@ -223,6 +230,10 @@ collections:
               - label: Image
                 name: image
                 widget: image
+                allow_multiple: true
+                media_library:
+                  config:
+                    multiple: true
       - name: album_photos
         label: Album Zdjęć
         file: data/album/photos.yaml
@@ -238,6 +249,10 @@ collections:
               - label: Image
                 name: image
                 widget: image
+                allow_multiple: true
+                media_library:
+                  config:
+                    multiple: true
               - label: Caption
                 name: caption
                 widget: string
