@@ -30,6 +30,6 @@ section_paragraphs:
   - If you want to co-organize, document projects, or propose a new initiative,
     reach out and we will help plug it into the calendar and site updates.
 gallery_images:
-  - img/kociol.jpg
-  - img/kociol.jpg
+  - /img/kociol.jpg
+  - /img/kociol.jpg
 ---

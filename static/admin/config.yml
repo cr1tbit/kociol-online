@@ -46,6 +46,7 @@ collections:
             name: gallery_images
             widget: list
             required: false
+            hint: "For static files use paths starting with /, e.g. /img/photo.jpg"
             field:
               label: Image
               name: image
