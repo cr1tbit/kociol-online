@@ -29,7 +29,9 @@ hero_lines:
 
     Planujemy więcej!
 
-    kocioł nie ma domu (ale to jest jakby okej)
+
+    **kocioł nie ma domu** (ale to jest jakby okej)
+
 
     Jesteśmy grupą ludzi nie miejscem. Spotykamy się tam gdzie ktoś z nas ma w danym momencie dostęp by nas ugościć.
 
