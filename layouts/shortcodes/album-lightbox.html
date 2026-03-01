@@ -1,6 +1,18 @@
 {{ $photos := site.Data.album.photos.photos }}
-{{ if gt (len $photos) 0 }}
-{{ $first := index $photos 0 }}
+{{ $items := slice }}
+{{ range $p := $photos }}
+  {{ if reflect.IsSlice $p.image }}
+    {{ range $img := $p.image }}
+      {{ if $img }}
+        {{ $items = $items | append (dict "title" $p.title "caption" $p.caption "image" $img) }}
+      {{ end }}
+    {{ end }}
+  {{ else if $p.image }}
+    {{ $items = $items | append (dict "title" $p.title "caption" $p.caption "image" $p.image) }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $items) 0 }}
+{{ $first := index $items 0 }}
 {{ $firstCaption := or $first.caption $first.title }}
 <div class="calendar-gallery" data-calendar-gallery>
   <figure class="calendar-main">
@@ -12,7 +24,7 @@
   </figure>
 
   <div class="calendar-previews" role="list">
-    {{ range $i, $p := $photos }}
+    {{ range $i, $p := $items }}
     {{ $caption := or $p.caption $p.title }}
     <button
       class="calendar-thumb{{ if eq $i 0 }} is-active{{ end }}"
