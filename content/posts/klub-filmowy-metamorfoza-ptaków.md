@@ -2,10 +2,7 @@
 title: Klub filmowy - Metamorfoza ptaków
 date: 2026-03-03T13:42:00.000+01:00
 draft: false
-summary: |-
-  Kolejny seans PKF:
-
-  „Metamorfoza ptaków” (2020)
+summary: ""
 ---
 
 
