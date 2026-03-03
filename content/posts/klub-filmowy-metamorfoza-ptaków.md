@@ -8,7 +8,7 @@ Kolejny seans PKF:
 
 „Metamorfoza ptaków” (2020)
 
-<br>&nbsp;</br>
+<br><br>
 
 Oddajmy głos krytykom:
 
