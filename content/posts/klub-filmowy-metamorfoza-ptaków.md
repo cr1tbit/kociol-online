@@ -2,7 +2,9 @@
 title: Klub filmowy - Metamorfoza ptaków
 date: 2026-03-03T13:42:00.000+01:00
 draft: false
-summary: "![Metamorfoza ptaków stopklatka](/uploads/metamorfoza-ptakow-stopklatka.jpg)"
+summary: '![Metamorfoza ptaków
+  stopklatka](/uploads/metamorfoza-ptakow-stopklatka.jpg "gdzie mi z tym
+  kursorem, jeszcze smug narobi")'
 ---
 ## Kolejny seans PKF:
 
@@ -10,7 +12,7 @@ summary: "![Metamorfoza ptaków stopklatka](/uploads/metamorfoza-ptakow-stopklat
 
 <br> </br>
 
-## Oddajmy głos krytykom:
+### Oddajmy głos krytykom:
 
 <br>
 
