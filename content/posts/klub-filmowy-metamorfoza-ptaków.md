@@ -6,6 +6,8 @@ summary: '![Metamorfoza ptaków
   stopklatka](/uploads/metamorfoza-ptakow-stopklatka.jpg "gdzie mi z tym
   kursorem, jeszcze smug narobi")'
 ---
+![Metamorfoza ptaków stopklatka](/uploads/metamorfoza-ptakow-stopklatka.jpg "gdzie mi z tym kursorem, jeszcze smug narobi")
+
 ## Kolejny seans PKF:
 
 „Metamorfoza ptaków” (2020)
