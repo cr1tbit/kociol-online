@@ -46,4 +46,4 @@ Chopina 32
 
 ## Kiedy:
 
-10 marca 2026, 19:00
+18 marca 2026, 19:00
