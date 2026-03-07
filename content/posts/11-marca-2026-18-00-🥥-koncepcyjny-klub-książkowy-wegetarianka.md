@@ -1,6 +1,6 @@
 ---
 title: "[11 marca 2026, 18:00] 🥥 Koncepcyjny Klub Książkowy - Wegetarianka"
-date: 2026-03-07T17:39:00.000+01:00
+date: 2026-03-01T00:01:00.000+01:00
 draft: false
 summary: |-
   
