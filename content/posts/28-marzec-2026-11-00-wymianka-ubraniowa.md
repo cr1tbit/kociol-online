@@ -6,9 +6,7 @@ summary: |-
   
   Zapraszam do przyniesienia swoich nieużywanych ciuchów i wymieniania się nimi!
 ---
-
 Zapraszam do przyniesienia swoich nieużywanych ciuchów i wymieniania się nimi! 
-
 
 Na miejscu okazją do pogadania, wypicia kawki. Zachęcam do przyniesienia czegoś do pochrupania/posłodyczowania
 
@@ -20,4 +18,4 @@ Chopina 32
 
 ## Kiedy:
 
-28 marzec 2026, 11:0
+28 marzec 2026, 11:00
