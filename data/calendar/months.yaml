@@ -1,8 +1,8 @@
 months:
-  - month: Luty
-    year: 2026
-    image: /uploads/436e1edb-50d5-4ff8-b0f3-567458e5685d.jpg
   - month: Marzec
     year: 2026
     image:
       - /uploads/kalendarz-marzec-2026.jpg
+  - month: Luty
+    year: 2026
+    image: /uploads/436e1edb-50d5-4ff8-b0f3-567458e5685d.jpg
