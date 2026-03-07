@@ -1,5 +1,5 @@
 ---
-title: "[28 marzec 2026, 11:00] Wymianka ubraniowa"
+title: "[28 marca 2026, 11:00] Wymianka ubraniowa"
 date: 2026-03-01T22:00:00.000+01:00
 draft: false
 summary: |-
@@ -18,4 +18,4 @@ Chopina 32
 
 ## Kiedy:
 
-28 marzec 2026, 11:00
+28 marca 2026, 11:00

@@ -1,5 +1,5 @@
 ---
-title: "[25 marzec 2026, 18:00] 📚🦚 PaWKa - Pożyczalna Wymiana Książkowa"
+title: "[25 marca 2026, 18:00] 📚🦚 PaWKa - Pożyczalna Wymiana Książkowa"
 date: 2026-03-01T22:20:00.000+01:00
 draft: false
 summary: |-
@@ -40,4 +40,4 @@ Chopina 32
 
 ## Kiedy:
 
-25 marzec 2026, 18:00
+25 marca 2026, 18:00

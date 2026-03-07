@@ -1,5 +1,5 @@
 ---
-title: "[30 marzec 2026] Klub Dramatyczny"
+title: "[30 marca 2026] Klub Dramatyczny"
 date: 2026-03-01T21:40:00.000+01:00
 draft: false
 summary: |-
