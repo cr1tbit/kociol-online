@@ -1,6 +1,6 @@
 ---
 title: "[30 marzec 2026] Klub Dramatyczny"
-date: 2026-03-07T17:55:00.000+01:00
+date: 2026-03-01T21:40:00.000+01:00
 draft: false
 summary: |-
   
