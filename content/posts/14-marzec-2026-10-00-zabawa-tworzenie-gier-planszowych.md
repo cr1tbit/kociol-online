@@ -1,6 +1,6 @@
 ---
 title: "[14 marzec 2026, 10:00] Zabawa - tworzenie gier planszowych"
-date: 2026-03-01T23:57:00.000+01:00
+date: 2026-03-01T23:20:00.000+01:00
 draft: false
 summary: >-
   
