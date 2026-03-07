@@ -1,6 +1,6 @@
 ---
 title: "[16 marzec 2026, 18:00] Pytanka zapoznawcze"
-date: 2026-03-01T23:56:00.000+01:00
+date: 2026-03-01T23:00:00.000+01:00
 draft: false
 summary: >-
   
