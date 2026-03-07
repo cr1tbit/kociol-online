@@ -1,5 +1,5 @@
 ---
-title: "[18 marca 2026, 19:00] Klub filmowy - Metamorfoza ptaków"
+title: "[18 marzec 2026, 19:00] Klub filmowy - Metamorfoza ptaków"
 date: 2026-03-01T22:40:00.000+01:00
 draft: false
 summary: '![Metamorfoza ptaków
@@ -46,4 +46,4 @@ Chopina 32
 
 ## Kiedy:
 
-18 marca 2026, 19:00
+18 marzec 2026, 19:00
