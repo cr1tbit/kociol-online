@@ -4,13 +4,13 @@ date: 2026-03-03T13:42:00.000+01:00
 draft: false
 summary: "![Metamorfoza ptaków stopklatka](/uploads/metamorfoza-ptakow-stopklatka.jpg)"
 ---
-Kolejny seans PKF:
+## Kolejny seans PKF:
 
 „Metamorfoza ptaków” (2020)
 
 <br> </br>
 
-Oddajmy głos krytykom:
+## Oddajmy głos krytykom:
 
 <br>
 
@@ -34,6 +34,12 @@ Chciałam zobaczyć”
 
 <br>
 
-Gdzie:
+## Gdzie:
 
 Chopina 32
+
+<br>
+
+## Kiedy:
+
+10 marca 2026, 19:00
