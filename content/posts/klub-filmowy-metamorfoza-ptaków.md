@@ -1,5 +1,5 @@
 ---
-title: Klub filmowy - Metamorfoza ptaków
+title: "[10 marca 2026, 19:00] Klub filmowy - Metamorfoza ptaków"
 date: 2026-03-03T13:42:00.000+01:00
 draft: false
 summary: '![Metamorfoza ptaków
