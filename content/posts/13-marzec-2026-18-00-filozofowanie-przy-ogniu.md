@@ -1,5 +1,5 @@
 ---
-title: "[13 marzec 2026, 18:00] Filozofowanie przy ogniu"
+title: "[13 marca 2026, 18:00] Filozofowanie przy ogniu"
 date: 2026-03-01T23:40:00.000+01:00
 draft: false
 summary: >-
@@ -28,4 +28,4 @@ Jeszcze się okaże
 
 ## Kiedy:
 
-13 marzec 2026, 18:00
+13 marca 2026, 18:00
