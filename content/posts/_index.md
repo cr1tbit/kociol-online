@@ -1,4 +1,4 @@
 ---
-title: Wydarzenia info
+title: Wydarzenia
 ---
 

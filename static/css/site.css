@@ -71,6 +71,9 @@ a {
 
 .logo-carousel-strip {
   display: flex;
+  width: max-content;
+  animation: logo-carousel-scroll 48s linear infinite;
+  will-change: transform;
 }
 
 .logo-carousel img {
@@ -78,6 +81,23 @@ a {
   height: 100px;
   display: block;
   border-right: 1px solid rgb(255 255 255 / 24%);
+  flex: 0 0 auto;
+}
+
+@keyframes logo-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel-strip {
+    animation: none;
+  }
 }
 
 .site-banner {

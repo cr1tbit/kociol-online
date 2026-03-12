@@ -14,6 +14,7 @@
         <div class="logo-carousel-track">
           <div class="logo-carousel-strip">
             {{ range seq 1 20 }}<img src="{{ "img/kociol.jpg" | relURL }}" alt="">{{ end }}
+            {{ range seq 1 20 }}<img src="{{ "img/kociol.jpg" | relURL }}" alt="">{{ end }}
           </div>
         </div>
       </div>
@@ -26,9 +27,9 @@
           <ul class="nav-list">
             <li><a href="{{ "/" | relURL }}">Kocioł info</a></li>
             <li><a href="{{ "/kalendarz/" | relURL }}">Kalendarz</a></li>
-            <li><a href="{{ "/posts/" | relURL }}">Wydarzenia info</a></li>
+            <li><a href="{{ "/posts/" | relURL }}">Wydarzenia</a></li>
             <li><a href="{{ "/album-zdjec/" | relURL }}">Album zdjęć</a></li>
-            <li><a href="{{ "/kotlownia/" | relURL }}">Kotłownia</a></li>
+            {{/* Temporarily hidden from navigation; page remains available at /kotlownia/. */}}
             <li><a href="{{ "/discord/" | relURL }}">Discord</a></li>
           </ul>
         </nav>

@@ -74,7 +74,7 @@ collections:
             name: body
             widget: markdown
       - name: posts_index
-        label: "Wydarzenia info (strona listy /posts/)"
+        label: "Wydarzenia (strona listy /posts/)"
         file: content/posts/_index.md
         fields:
           - label: Title
@@ -139,7 +139,7 @@ collections:
             name: body
             widget: markdown
   - name: posts
-    label: "Wydarzenia info - wpisy"
+    label: "Wydarzenia - wpisy"
     folder: content/posts
     create: true
     slug: "{{slug}}"
