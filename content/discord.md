@@ -8,4 +8,4 @@ Jest to miejsce do obgadywania szczegółów wydarzeń, spotkań, na dyskursy na
 - według niej opisz siebie krótko na kanale #przedstaw-się
 - następnie dodaj reakcję zielonego ptaszka pod wiadomością na kanale #definicja w celu uzyskania @Zupy - roli wpuszczającej do reszty serwera
 
-[Dołącz do nas na Discordzie](https://discord.gg/uecKGBUT)
+[Dołącz do nas na Discordzie](https://discord.gg/7nc8ZZBxPd)
