@@ -34,6 +34,11 @@ collections:
           - label: Section heading
             name: section_heading
             widget: string
+          - label: Banner category
+            name: banner_category
+            widget: string
+            required: false
+            hint: "Top strip uses images with matching category from 'Banner Images' data."
           - label: Section paragraphs
             name: section_paragraphs
             widget: list
@@ -254,3 +259,22 @@ collections:
                 name: caption
                 widget: string
                 required: false
+      - name: banner_images
+        label: Banner Images
+        file: data/banner/images.yaml
+        fields:
+          - label: Images
+            name: images
+            widget: list
+            summary: "{{fields.category}} - {{fields.title}}"
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: Category
+                name: category
+                widget: string
+              - label: Image
+                name: image
+                widget: image

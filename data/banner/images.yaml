@@ -1,0 +1,16 @@
+images:
+  - title: Kociol
+    category: top-banner
+    image: /uploads/banner/kociol.jpg
+  - title: Kocio Jajko
+    category: top-banner
+    image: /uploads/banner/kocio-jajko.jpg
+  - title: Banan
+    category: top-banner
+    image: /uploads/banner/banan.jpg
+  - title: Kociol Kurc
+    category: top-banner
+    image: /uploads/banner/kociol-kurc.png
+  - title: Kociolek Kalina
+    category: top-banner
+    image: /uploads/banner/kociolek-kalina.png

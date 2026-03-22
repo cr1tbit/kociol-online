@@ -72,7 +72,7 @@ a {
 .logo-carousel-strip {
   display: flex;
   width: max-content;
-  animation: logo-carousel-scroll 48s linear infinite;
+  animation: logo-carousel-scroll 96s linear infinite;
   will-change: transform;
 }
 

@@ -39,6 +39,7 @@ hero_lines:
 
     Na naszych eventach możesz mówić o wszystkim jeśli nie tworzysz w ten sposób dyskomfortu u innych i nie obrażasz ich osoby, upodobań czy wyznań.
 section_heading: kociołki
+banner_category: top-banner
 section_paragraphs: []
 gallery_images:
   - /img/kociol.jpg

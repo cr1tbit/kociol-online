@@ -8,13 +8,36 @@
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
 </head>
 <body>
+  {{ $bannerCategory := .Site.Home.Params.banner_category | default "top-banner" }}
+  {{ $sourceImages := slice }}
+  {{ with site.Data.banner.images.images }}
+    {{ range where . "category" $bannerCategory }}
+      {{ with .image }}
+        {{ $sourceImages = $sourceImages | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if eq (len $sourceImages) 0 }}
+    {{ $sourceImages = slice "/img/kociol.jpg" }}
+  {{ end }}
+  {{ $targetCount := 40 }}
+  {{ $bannerImages := slice }}
+  {{ if ge (len $sourceImages) $targetCount }}
+    {{ $bannerImages = shuffle $sourceImages }}
+  {{ else }}
+    {{ range seq 1 $targetCount }}
+      {{ $idx := mod (sub . 1) (len $sourceImages) }}
+      {{ $bannerImages = $bannerImages | append (index $sourceImages $idx) }}
+    {{ end }}
+    {{ $bannerImages = shuffle $bannerImages }}
+  {{ end }}
   <div class="page-wrap">
     <header class="masthead panel">
       <div class="logo-carousel" aria-hidden="true">
         <div class="logo-carousel-track">
           <div class="logo-carousel-strip">
-            {{ range seq 1 20 }}<img src="{{ "img/kociol.jpg" | relURL }}" alt="">{{ end }}
-            {{ range seq 1 20 }}<img src="{{ "img/kociol.jpg" | relURL }}" alt="">{{ end }}
+            {{ range $bannerImages }}<img src="{{ . | relURL }}" alt="">{{ end }}
+            {{ range $bannerImages }}<img src="{{ . | relURL }}" alt="">{{ end }}
           </div>
         </div>
       </div>
