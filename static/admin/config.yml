@@ -232,10 +232,6 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                allow_multiple: true
-                media_library:
-                  config:
-                    multiple: true
       - name: album_photos
         label: Album Zdjęć
         file: data/album/photos.yaml

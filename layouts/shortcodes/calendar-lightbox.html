@@ -1,6 +1,21 @@
 {{ $months := site.Data.calendar.months.months }}
-{{ if gt (len $months) 0 }}
-{{ $first := index $months 0 }}
+{{ $normalizedMonths := slice }}
+{{ range $m := $months }}
+  {{ $img := "" }}
+  {{ if reflect.IsSlice $m.image }}
+    {{ if gt (len $m.image) 0 }}
+      {{ $img = index $m.image 0 }}
+    {{ end }}
+  {{ else if $m.image }}
+    {{ $img = $m.image }}
+  {{ end }}
+  {{ if $img }}
+    {{ $normalizedMonths = $normalizedMonths | append (dict "month" $m.month "year" $m.year "image" $img) }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $normalizedMonths) 0 }}
+{{ $first := index $normalizedMonths 0 }}
 <div class="calendar-gallery" data-calendar-gallery>
   <figure class="calendar-main">
     <img
@@ -11,7 +26,7 @@
   </figure>
 
   <div class="calendar-previews" role="list">
-    {{ range $i, $m := $months }}
+    {{ range $i, $m := $normalizedMonths }}
     <button
       class="calendar-thumb{{ if eq $i 0 }} is-active{{ end }}"
       type="button"
