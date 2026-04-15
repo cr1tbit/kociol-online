@@ -1,5 +1,5 @@
 ---
-title: "[17 kwietnia 2026] Ognisko"
+title: "[17 kwietnia 2026, 18:00] Ognisko"
 date: 2026-04-01T23:40:00.000+02:00
 draft: false
 summary: >-
