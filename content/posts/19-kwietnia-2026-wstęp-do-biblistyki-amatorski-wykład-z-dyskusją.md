@@ -1,5 +1,5 @@
 ---
-title: "[19 kwietnia 2026] Wstęp do biblistyki - amatorski wykład z dyskusją"
+title: "[19 kwietnia 2026, 16:30] Wstęp do biblistyki - amatorski wykład z dyskusją"
 date: 2026-04-01T23:20:00.000+02:00
 draft: false
 summary: >-
