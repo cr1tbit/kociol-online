@@ -2,8 +2,12 @@
 title: "[23 maja 2026, 15:00] Spacer Fotograficzny #2"
 date: 2026-05-01T17:00:00.000+02:00
 draft: false
-summary: Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z
-  ekscytacją planujemy kolejny!
+summary: >-
+  Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z ekscytacją
+  planujemy kolejny!
+
+
+  Lokalizacja: Przystanek Jaśkowa Dolina
 ---
 Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z ekscytacją planujemy kolejny!
 
