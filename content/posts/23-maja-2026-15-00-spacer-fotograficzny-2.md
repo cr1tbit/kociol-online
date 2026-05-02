@@ -3,12 +3,17 @@ title: "[23 maja 2026, 15:00] Spacer Fotograficzny #2"
 date: 2026-05-01T17:00:00.000+02:00
 draft: false
 summary: >-
-  Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z ekscytacją
-  planujemy kolejny!
+  ![Spacer Fotograficzny #2](/uploads/spacer-fotograficzny-maj-2026.jpg "Wyjście
+  z cienia, krok pierwszy")
+
+
+  Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z ekscytacją planujemy kolejny!
 
 
   Lokalizacja: Przystanek Jaśkowa Dolina
 ---
+![Spacer Fotograficzny #2](/uploads/spacer-fotograficzny-maj-2026.jpg "Wyjście z cienia, krok pierwszy")
+
 Hej, ostatni spacer tak nas ze @storm pozytywnie doładował, że z ekscytacją planujemy kolejny!
 
 Chodziliśmy po terenach Stoczni w trakcie złotej godziny, co rusz znajdując apetyczne kadry. Wspinaliśmy się na opuszczone pojazdy i hałdy gruzu, podziwialiśmy lśniące kadłuby i puste budynki. 
