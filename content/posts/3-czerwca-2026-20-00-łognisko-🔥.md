@@ -17,31 +17,19 @@ summary: |-
 ---
 Zapraszamy na kolejne Kociołkowe ognisko!
 
-
-
 Standardowe miejsce - Żwirownia przy ul. Polanki:
 
 https://maps.app.goo.gl/c2cmSiHwKQZsYSM59 
 
-
-
 Najbliższy przystanek SKM Przymorze Uniwersytet, tramwajowy - Bażyńskiego. 
-
-
 
 Za poprawczakiem dróżką obok stawu, traficie na polankę zapełnioną multum wygasłych i aktywnych ognisk. 
 
 Wokół jednego z nich będzie nasza ekipa. Chyba, że dotrzesz jako pierwszx - poczekaj na inne kociołkowe głowy albo zacznij rozpalać! 
 
-
-
-Zbieramy się pi razy drzwi koło 20, potrwa conajmniej kilka godzin, także śmiało  (albo nieśmiało) dołączaj w trakcie. 
-
-
+Zbieramy się pi razy drzwi koło 20, potrwa co najmniej kilka godzin, także śmiało  (albo nieśmiało) dołączaj w trakcie. 
 
 Przyda Ci się woda, jedzonko, latarka. Siedzimy na pniach. 
-
-
 
 Sprawdzaj pogodę. 
 
