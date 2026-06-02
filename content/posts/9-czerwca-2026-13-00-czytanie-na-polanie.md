@@ -1,5 +1,5 @@
 ---
-title: "[9 czerwca 2026, 13:00] czytanie na polanie"
+title: "[14 czerwca 2026, 13:00] czytanie na polanie"
 date: 2026-06-01T20:00:00.000+02:00
 draft: false
 summary: >-
